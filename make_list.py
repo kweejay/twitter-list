@@ -41,3 +41,5 @@ responses = client.get_users(usernames = edited_list)
 data = responses[0]
 for user in data:
     client.add_list_member(list_id, user.id)
+
+print(f"{len(edited_list)} users added successfully to the Twitter list.")
